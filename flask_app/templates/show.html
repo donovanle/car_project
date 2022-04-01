@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <button onclick="location.href='/dashboard'" type="button" class="m-2">Dashboard</button>
+        <button onclick="location.href='/logout'" type="button" class="m-2">Logout</button>
+        <h2>Price: {{car.price}}</h2>
+        <p>Model: {{car.model}}</p>
+        <p>Make: {{car.make}}</p>
+        <p>Year: {{car.year}}</p>
+        <p>Description: {{car.description}}</p>
+        <p>Seller: {{car.first_name}} {{car.last_name}}</p>
+        <button onclick="location.href='/delete/{{car.id}}'" type="button" class="m-2">Purchase</button>
+    </div>
+</body>
+</html>
